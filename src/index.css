@@ -1,0 +1,40 @@
+:root {
+  --bg: var(--bg-light);
+  --sidebar: var(--sidebar-light);
+  --navbar: var(--navbar-light);
+
+  /* light theme */
+  --bg-light: #ffffff;
+  --sidebar-light: #f2f3f5;
+  --navbar-light: #e3e5e8;
+
+  --user-bg: #e9e9e9;
+  --span-color: #8f8f8f;
+
+  --icon-color: #191923;
+  --icon-bg-hover: #dadada;
+  --icon-color-hover: #000000;
+
+  /* dark theme */
+  --bg-dark: #000000;
+  --sidebar-dark: #1c1c1c;
+  --navbar-dark: #333333;
+}
+
+* {
+  font-family: 'Public Sans', sans-serif;
+  user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+

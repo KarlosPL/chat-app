@@ -1,0 +1,9 @@
+.messages {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+
+  &:first-child {
+    padding-top: 20px;
+  }
+}

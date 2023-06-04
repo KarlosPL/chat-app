@@ -1,0 +1,68 @@
+.sidebar-chat {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+
+  .sidebar-chat-title {
+    align-self: start;
+    width: 100%;
+    padding: 5px 0 22px 20px;
+    border-bottom: 2px solid var(--navbar);
+    h2 {
+      font-size: 22px;
+      color: var(--icon-color);
+    }
+  }
+
+  h3 {
+    padding-left: 20px;
+    font-size: 18px;
+    color: var(--icon-color);
+  }
+
+  .user-chat {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: var(--icon-color);
+    box-shadow: -2px 1px 12px -8px rgba(66, 68, 90, 1);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      background-color: var(--navbar);
+      margin-bottom: 1rem;
+    }
+
+    img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .user-chat-info {
+      
+      width: 70%;
+      margin-left: 1rem;
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 14px;
+        color: lightgray;
+        width: 15rem;
+        color: rgb(157, 161, 161);
+      }
+    }
+    .user-chat-time {
+      margin-left: 2rem;
+    }
+
+  }
+}

@@ -1,0 +1,113 @@
+.chat-input {
+  width: 100%;
+  height: 8vh;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 2px solid var(--sidebar);
+  position: relative;
+  color: var(--icon-color);
+
+  #messagebar {
+    width: 75%;
+    height: 50%;
+    background-color: var(--sidebar);
+    color: var(--icon-color);
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+
+    &::placeholder {
+      font-size: 15px;
+    }
+
+    &:focus {
+      outline-width: 0;
+    }
+  }
+
+  .photo-preview {
+    position: absolute;
+    bottom: 95%;
+    left: 85%;
+
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 5%;
+    }
+  }
+
+  .chat-input-icons {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .picker {
+      width: 15%;
+      height: 15px;
+      position: fixed;
+      bottom: 41%;
+      right: 1%;
+    }
+
+    .icon {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .iconText {
+      background-color: rgb(100, 100, 100);
+      color: #fff;
+      position: absolute;
+      bottom: 120%;
+      padding: 10px 12px;
+      border-radius: 5px;
+      font-size: 12px;
+      opacity: 0;
+      transition: all 0.5s;
+    }
+
+    .fi {
+      width: 88px;
+      text-align: center;
+    }
+
+    .iconText::after {
+      content: '';
+      border-width: 5px;
+      border-style: solid;
+      border-color: #fff transparent transparent transparent;
+      position: absolute;
+      top: 100%;
+      left: 40%;
+      margin-left: 5%;
+    }
+
+    .icon:hover .iconText {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+
+    svg {
+      width: 22px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    #send {
+      transition: 0.25s all;
+      &:hover {
+        transform: scale(1.5);
+        color: rgb(0, 102, 255);
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.settings-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  color: var(--icon-color);
+
+  .settings-popup-content {
+    background-color: var(--bg);
+    box-shadow: -1px 0px 15px -9px rgba(66, 68, 90, 1);
+    border-radius: 15px;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    
+    
+    .settings-popup-content-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--sidebar);
+      
+
+      svg {
+        margin: 5px 5px 0 0;
+        width: 45px;
+        height: auto;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+
+      .settings-popup-content-header-title {
+        h2 {
+          margin-left: 25px;
+          font-size: 28px;
+        }
+      }
+    }
+
+    .settings-popup-content-content {
+      position: relative;
+
+      section {
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        &:first-child {
+          border-top: 2px solid var(--sidebar);
+        }
+
+        border-bottom: 2px solid var(--sidebar);
+        transition: all 0.5s;
+        cursor: pointer;
+
+        p {
+          width: 90%;
+          font-size: 18px;
+          margin-left: 0.7rem;
+        }
+
+        svg {
+          width: 32px;
+          height: auto;
+        }
+
+        &:hover {
+          background-color: var(--sidebar);
+        }
+      }
+
+      .profile-photo-popup {
+        position: fixed;
+        left: 25%;
+        top: 25%;
+        background-color: var(--bg);
+        box-shadow: -1px 0px 15px -9px rgba(66, 68, 90, 1);
+        border-radius: 20px;
+
+        width: 50%;
+        height: 50%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 2vh;
+
+        img {
+          width: 250px;
+          height: 250px;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 5%;
+        }
+
+        .profile-photo-popup-buttons-container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 2vh;
+
+          .cancel-button {
+            background-color: #939ddd;
+          }
+
+          button {
+            width: 200px;
+            height: 50px;
+            background-color: #576aed;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+              background-color: #4656c0;
+            }
+          }
+        }
+      }
+
+      .profile-desc-popup {
+        position: fixed;
+        left: 12.5%;
+        top: 12.5%;
+        background-color: var(--bg);
+        box-shadow: -1px 0px 15px -9px rgba(66, 68, 90, 1);
+        border-radius: 20px;
+
+        width: 75%;
+        height: 75%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 2vh;
+
+        textarea {
+          resize: none;
+          outline: none;
+          word-break: break-all;
+          width: 25vw;
+          height: 15vh;
+          font-size: 18px;
+          padding: 25px;
+          border-radius: 10px;
+          border: none;
+          box-shadow: -1px 2px 15px -9px rgba(66, 68, 90, 1);
+        }
+
+        .profile-desc-popup-buttons-container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 1vh;
+
+          button {
+            width: 200px;
+            height: 50px;
+            background-color: #576aed;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+              background-color: #4656c0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

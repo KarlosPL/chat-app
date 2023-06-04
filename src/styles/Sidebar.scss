@@ -1,0 +1,11 @@
+.sidebar {
+  width: 370px;
+  padding: 20px 5px;
+  height: 100vh;
+  background-color: var(--sidebar);
+
+  .sidebar-header {
+    width: 100%;
+    height: 100%;
+  }
+}
